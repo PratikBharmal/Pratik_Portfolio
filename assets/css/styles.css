@@ -307,8 +307,7 @@ img {
     order: -1;
     /* Move image to the top */
     width: 210px;
-    margin-bottom: 20px;
-    /* Adds space between image and content */
+  
     position: static;
     /* Remove absolute positioning */
     display: flex;
