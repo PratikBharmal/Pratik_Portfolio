@@ -81,21 +81,6 @@ skillsHeader.forEach((el)=>{
 
 /*===== MY edit end =====*/
 
-// Contact me button
-
-// function contactMe() {
-//     var phoneNumber = "+91 9421180494"; // Replace with your phone number
-//     var email = "bharmalpratik97@gmail.com"; // Replace with your Gmail address
-//     var message = "Please contact me at:" +
-//       "\nPhone: " + phoneNumber +
-//       "\nEmail: " + email;
-    
-//     alert(message);
-//     // For mobile, you can use the following to open the phone app:
-//     // window.open("tel:" + phoneNumber);
-//     // For Gmail, you can use the following to open the email app:
-//     // window.open("mailto:" + email);
-//   }
 
   function contactMe() {
     var phoneNumber = "+919421180494"; // Replace with your phone number
