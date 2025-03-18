@@ -200,18 +200,29 @@ img {
     width: 50%;
     height: 95%;
     padding: 2rem;
-    background-color: #d0d9e1; /* This is the background color for the menu, not the nav */
+    background-color: #eff4f8; 
     transition: 0.5s;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
    
   }
+  .nav__item a{
+    margin-bottom: var(--mb-5);
+    font-family: 'Inter', sans-serif; 
+    color: #000000 !important;
+    font-weight: 600;
+  }
+  
+  .nav__link:hover {
+    position: relative;
+    color: #007FFF;
+  
+  }
 }
 
 .nav__item {
   margin-bottom: var(--mb-5);
-  font-family: 'Inter', sans-serif; 
- 
+  font-family: 'Inter'; 
 }
 
 .nav__link {
@@ -256,7 +267,7 @@ img {
 
 .nav__toggle {
   color: var(--second-color);
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 
@@ -846,7 +857,7 @@ body {
 }
 .contact__button {
   font-family: poppins;
-}nav__item
+}
 .contact__input {
   font-family: 'Inter', sans-serif;
 }
