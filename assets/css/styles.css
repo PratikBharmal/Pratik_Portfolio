@@ -1,53 +1,54 @@
 /*===== GOOGLE FONTS =====*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-:root{
+:root {
   --header-height: 3rem;
   /*--===============COLORS==========================*/
 
-  --hue-color:197 ;
-   
+  --hue-color: 197;
+
   /*hsl color mode*/
-  --first-color:#007FFF;
---hue-color: 0; /* Example for red */
---first-color-second: #ff5c5c;
---first-color-alt: #e24b4b;
---first-color-lighter: #f9bdbd;
---title-color: #2a2a2a;
---text-color: #6e6e6e;
---text-color-light: #a8a8a8;
---input-color: #ffebeb;
---body-color: #ffe6e6;
+  --first-color: #007FFF;
+  --hue-color: 0;
+  /* Example for red */
+  --first-color-second: #ff5c5c;
+  --first-color-alt: #e24b4b;
+  --first-color-lighter: #f9bdbd;
+  --title-color: #2a2a2a;
+  --text-color: #6e6e6e;
+  --text-color-light: #a8a8a8;
+  --input-color: #ffebeb;
+  --body-color: #ffe6e6;
   --container-color: #ffffff;
   /*===================fONDT AND TYPOGRAPHY========*/
-  --body-font:'Poppins', sans-serif;
+  --body-font: 'Poppins', sans-serif;
   /*----------map(rempx-------------*/
-  --big-font-size:2rem ;
-  --h1-font-size:1.5rem ;
-  --h2-font-size:1.25rem ;
-  --h3-font-size:1.125rem ;
-  --normal-font-size:0.938rem ;
-  --small-font-size:0.813rem ;
-  --smaller-font-size:0.75rem ;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
   /*============font weight=========*/
   --font-medium: 500;
   --font-semi-bold: 600;
-  
+
   /*===========Margenes Botton=========*/
   /*map(remp*/
   --mb-2: 1rem;
   --mb-4: 2rem;
   --mb-5: 2.5rem;
   --mb-6: 3rem;
-  
+
   /*===========z index ====================*/
   --z-back: -10;
   --z-fixed: 100;
-  }
+}
 
 
 
-  
+
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
@@ -56,46 +57,54 @@
     --smaller-font-size: .875rem;
   }
 }
+
 /*===== MY edit start =====*/
 .home__blob-small {
-  width: 70%; /* Adjust the width as needed */
+  width: 70%;
+  /* Adjust the width as needed */
   height: auto;
   margin-bottom: 35%;
 }
+
 @media screen and (max-width: 1024px) {
   .home__blob-small {
-    margin-bottom: 0; /* Reset bottom margin when screen width is less than 1024px */
+    margin-bottom: 0;
+    /* Reset bottom margin when screen width is less than 1024px */
   }
 }
 
 .home__blob-img {
-  width: 100%; /* Make sure the image takes up the full width of the container */
+  width: 100%;
+  /* Make sure the image takes up the full width of the container */
   height: auto;
 }
 
 
 
 
-.about__info{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: var(--mb-2-5);
+.about__info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2-5);
 
 }
-.about__info-title{
-    font-size: var(--h2-font-size);
-    font-weight: var(--font-semi-bold);
-    color: var(--title-color);
+
+.about__info-title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
 
 }
-.about__info-name{
-    font-size: var(--smaller-font-size);
+
+.about__info-name {
+  font-size: var(--smaller-font-size);
 
 }
+
 .about__info-title,
-.about__info-name{
-    display: block;
-    text-align: center;
+.about__info-name {
+  display: block;
+  text-align: center;
 }
 
 
@@ -103,7 +112,9 @@
 
 /*===== MY edit end =====*/
 /*===== BASE =====*/
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -118,7 +129,9 @@ body {
   color: var(--second-color);
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   margin: 0;
 }
 
@@ -147,6 +160,7 @@ img {
   margin-bottom: var(--mb-4);
   text-align: center;
 }
+
 .section-title::after {
   position: absolute;
   content: "";
@@ -189,7 +203,8 @@ img {
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semi);
-  background-color: transparent; /* Remove any background color */
+  background-color: transparent;
+  /* Remove any background color */
 }
 
 @media screen and (max-width: 767px) {
@@ -200,29 +215,30 @@ img {
     width: 50%;
     height: 95%;
     padding: 2rem;
-    background-color: #eff4f8; 
+    background-color: #eff4f8;
     transition: 0.5s;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-   
+
   }
-  .nav__item a{
+
+  .nav__item a {
     margin-bottom: var(--mb-5);
-    font-family: 'Inter', sans-serif; 
+    font-family: 'Inter', sans-serif;
     color: #000000 !important;
     font-weight: 600;
   }
-  
+
   .nav__link:hover {
     position: relative;
     color: #007FFF;
-  
+
   }
 }
 
 .nav__item {
   margin-bottom: var(--mb-5);
-  font-family: 'Inter'; 
+  font-family: 'Inter';
 }
 
 .nav__link {
@@ -262,7 +278,7 @@ img {
   color: var(--second-color);
   font-family: 'Pacifico', cursive;
   font-size: 20px;
- 
+
 }
 
 .nav__toggle {
@@ -294,31 +310,38 @@ img {
   row-gap: 5rem;
   padding: 4rem 0 5rem;
 }
+
 .home__data {
   align-self: center;
 }
+
 .home__title {
   font-size: 30px;
   letter-spacing: 0.04em;
 }
+
 .home__title-color {
   color: var(--first-color);
 }
+
 .home__social {
   display: flex;
   flex-direction: row;
   margin-top: 30px;
   gap: 10px;
 }
+
 .home__social-icon {
   width: max-content;
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
   color: var(--second-color);
 }
+
 .home__social-icon:hover {
   color: var(--first-color);
 }
+
 .home__img {
   justify-self: center;
   position: absolute;
@@ -326,12 +349,15 @@ img {
   bottom: 0;
   width: 210px;
 }
+
 .home__blob {
   fill: var(--first-color);
 }
+
 .home__blob-img {
   width: 360px;
 }
+
 @media screen and (max-width: 768px) {
   .home {
     position: relative;
@@ -342,30 +368,34 @@ img {
     align-items: center;
     text-align: center;
 
-}
+  }
 
-/* Center image on top for mobile view */
+  /* Center image on top for mobile view */
 
 
   .home__img {
-      order: -1; /* Move image to the top */
-      width: 210px;
-      margin-bottom: 20px; /* Adds space between image and content */
-      position: static; /* Remove absolute positioning */
-      display: flex;
-      justify-content: center;
+    order: -1;
+    /* Move image to the top */
+    width: 210px;
+    margin-bottom: 20px;
+    /* Adds space between image and content */
+    position: static;
+    /* Remove absolute positioning */
+    display: flex;
+    justify-content: center;
   }
 
   .home__data {
-      text-align: center;
+    text-align: center;
   }
 
   .home__title {
-      font-size: 24px; /* Reduce title size for mobile */
+    font-size: 24px;
+    /* Reduce title size for mobile */
   }
 
   .home__social {
-      justify-content: center;
+    justify-content: center;
   }
 }
 
@@ -380,6 +410,7 @@ img {
   transition: 0.3s;
   margin-top: 20px;
 }
+
 .button:hover {
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
@@ -389,12 +420,15 @@ img {
   row-gap: 2rem;
   text-align: center;
 }
+
 .about__subtitle {
   margin-bottom: var(--mb-2);
 }
+
 .about__img {
   justify-self: center;
 }
+
 .about__img img {
   width: 200px;
   border-radius: 0.5rem;
@@ -405,12 +439,15 @@ img {
   row-gap: 2rem;
   text-align: center;
 }
+
 .skills__subtitle {
   margin-bottom: var(--mb-2);
 }
+
 .skills__text {
   margin-bottom: var(--mb-4);
 }
+
 .skills__data {
   display: flex;
   justify-content: space-between;
@@ -419,18 +456,21 @@ img {
   font-weight: var(--font-semi);
   /* padding: 0.5rem 1rem; */
   margin-bottom: var(--mb-4);
-   /* border-radius: 0.5rem; */
+  /* border-radius: 0.5rem; */
   /* box-shadow: 0px 4px 25px rgba(15, 145, 221, 0.15); */
 }
+
 .skills__icon {
   font-size: 2rem;
   margin-right: var(--mb-2);
   color: var(--first-color);
 }
+
 .skills__names {
   display: flex;
   align-items: center;
 }
+
 .skills__bar {
   position: absolute;
   left: 0;
@@ -440,18 +480,23 @@ img {
   border-radius: 0.5rem;
   z-index: var(--z-back);
 }
+
 .skills__html {
   width: 95%;
 }
+
 .skills__css {
   width: 85%;
 }
+
 .skills__js {
   width: 65%;
 }
+
 .skills__ux {
   width: 85%;
 }
+
 .skills__img {
   border-radius: 0.5rem;
 
@@ -466,65 +511,75 @@ img {
 /*==============qualifications==============d*/
 
 
-.qualification__tabs{
-    display:  flex;
-    justify-content: space-evenly;
-    margin-bottom: var(--mb-2);
+.qualification__tabs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
 
 }
-.qualification__button{
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
-    cursor: pointer;
+
+.qualification__button {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
 
 }
-.qualification__button:hover{
-    color: var(--first-color);
+
+.qualification__button:hover {
+  color: var(--first-color);
 
 }
-.qualification__icon{
-    font-size: 1.8rem;
-    margin-right: var(--mb-0-25);
+
+.qualification__icon {
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
 
 }
-.qualification__data{
-    display: grid;
-    grid-template-columns: 1fr max-content 1fr;
-    column-gap: 1.5rem;
+
+.qualification__data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
 
 }
-.qualification__title{
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
+
+.qualification__title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
 
 }
-.qualification__subtitle{
-    display: inline-block;
-    font-size: var(--small-font-size);
-    margin-bottom: var(--mb-1);
+
+.qualification__subtitle {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
 
 }
-.qualification__calendar{
-    font-size: var(--smaller-font-size);
-    column-rule: var(--text-color-light);
+
+.qualification__calendar {
+  font-size: var(--smaller-font-size);
+  column-rule: var(--text-color-light);
 
 }
-.qualification__rounder{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-color: var(--first-color);
-    border-radius: 50%;
+
+.qualification__rounder {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: var(--first-color);
+  border-radius: 50%;
 
 
 }
-.qualification__line{
-    display:  block;
-    width: 2px;
-    height: 100%;
-    background-color: var(--first-color);
-    transform: translate(6px,-7px);
+
+.qualification__line {
+  display: block;
+  width: 2px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -7px);
 }
+
 .work__wrapper {
   position: relative;
   display: inline-block;
@@ -534,11 +589,13 @@ img {
 /* GitHub icon style */
 .github-icon {
   position: absolute;
-  bottom: -20px;  /* Moves the icon slightly outside the box */
-  right: -20px;    
+  bottom: -20px;
+  /* Moves the icon slightly outside the box */
+  right: -20px;
   width: 40px;
   height: 40px;
-  background: #333;    /* GitHub dark background color */
+  background: #333;
+  /* GitHub dark background color */
   color: #fff;
   display: flex;
   justify-content: center;
@@ -553,7 +610,8 @@ img {
 
 /* GitHub icon hover effect */
 .github-icon:hover {
-  background: #4078c0;  /* GitHub brand color */
+  background: #4078c0;
+  /* GitHub brand color */
   transform: scale(1.1);
 }
 
@@ -565,8 +623,10 @@ img {
 /* ===== WORK ===== */
 .work__container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-template-rows: repeat(2, auto); /* 2 rows */
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 columns */
+  grid-template-rows: repeat(2, auto);
+  /* 2 rows */
   gap: 20px;
   padding: 20px;
   justify-content: center;
@@ -621,13 +681,15 @@ img {
 /* Responsive Design */
 @media (max-width: 768px) {
   .work__container {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns for tablets */
   }
 }
 
 @media (max-width: 480px) {
   .work__container {
-      grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+    grid-template-columns: repeat(1, 1fr);
+    /* 1 column for mobile */
   }
 }
 
@@ -640,12 +702,14 @@ img {
   padding: 1rem;
   border-radius: 0.5rem;
   border: 1.5px solid var(--first-color);
-  border-color: transparent; /*contact box border color*/
+  border-color: transparent;
+  /*contact box border color*/
   box-shadow: 0px 4px 25px rgba(74, 108, 176, 0.639);
 
   outline: none;
   margin-bottom: var(--mb-4);
 }
+
 .contact__button {
   display: block;
   border: none;
@@ -667,21 +731,27 @@ img {
   font-weight: var(--font-semi);
   padding: 2rem 0;
 }
+
 .footer__title {
   font-size: 2rem;
   margin-bottom: var(--mb-4);
 }
+
 .footer__social {
   margin-bottom: var(--mb-4);
 }
+
 .home__social-icon {
-  margin: 0; /* Adds space on both sides */
+  margin: 0;
+  /* Adds space on both sides */
 }
+
 .footer__icon {
   font-size: 1.5rem;
   color: #ffffff;
   margin: 0 var(--mb-2);
 }
+
 .footer__copy {
   font-size: var(--smaller-font-size);
   margin-bottom: 8px;
@@ -689,9 +759,12 @@ img {
 
 /* my edit start */
 .footer {
-    background-color: black; /* Choose your preferred shade of blue */
-    padding: 20px; /* Adjust padding as needed */
-    color: white; /* Set text color to contrast with the background */
+  background-color: black;
+  /* Choose your preferred shade of blue */
+  padding: 20px;
+  /* Adjust padding as needed */
+  color: white;
+  /* Set text color to contrast with the background */
 }
 
 /* my edit end */
@@ -706,8 +779,10 @@ img {
   .home {
     row-gap: 2rem;
   }
+
   .home__img {
-    width: 180px; /* Slightly smaller for better fit */
+    width: 180px;
+    /* Slightly smaller for better fit */
   }
 }
 
@@ -716,40 +791,50 @@ img {
   .home {
     padding: 4rem 0 2rem;
   }
+
   .home__social {
     padding-top: 0;
     padding-bottom: 2.5rem;
     flex-direction: row;
     align-self: flex-end;
   }
+
   .home__social-icon {
     margin-bottom: 0;
     margin-right: var(--mb-4);
   }
+
   .home__img {
-    width: 250px; /* Better fit for tablets */
+    width: 250px;
+    /* Better fit for tablets */
     bottom: 15%;
   }
+
   .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: left;
   }
+
   .skills__container {
     grid-template-columns: 0.8fr;
     justify-content: center;
     column-gap: 1rem;
   }
+
   .work__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     padding-top: 2rem;
   }
+
   .contact__form {
-    width: 400px; /* Adjusted for better form size */
+    width: 400px;
+    /* Adjusted for better form size */
     padding-top: 2rem;
 
   }
+
   .contact__container {
     justify-items: center;
   }
@@ -760,52 +845,67 @@ img {
   body {
     margin: 0;
   }
+
   .section {
     padding-top: 4rem;
     padding-bottom: 3rem;
   }
+
   .section-title {
     margin-bottom: var(--mb-6);
   }
+
   .section-title::after {
     width: 80px;
     top: 3rem;
   }
+
   .nav {
     height: calc(var(--header-height) + 1.5rem);
   }
+
   .nav__list {
     display: flex;
     padding-top: 0;
   }
+
   .nav__item {
     margin-left: var(--mb-6);
     margin-bottom: 0;
   }
+
   .nav__toggle {
     display: none;
   }
+
   .nav__link {
     color: var(--second-color);
   }
+
   .home {
     padding: 6rem 0 2rem;
   }
+
   .home__img {
-    width: 270px; /* Adjusted for medium screens */
+    width: 270px;
+    /* Adjusted for medium screens */
     bottom: 20%;
   }
+
   .about__container {
     padding-top: 0rem;
   }
+
   .about__img img {
     width: 280px;
   }
+
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     align-items: center;
   }
+
   .work__container {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
@@ -818,16 +918,22 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+
   .home {
     padding: 8rem 0 2rem;
   }
+
   .home__img {
-    width: 400px; /* Larger for big screens */
+    width: 400px;
+    /* Larger for big screens */
     bottom: 20%;
   }
+
   .about__img img {
-    width: 350px; /* Proper scaling for bigger screens */
+    width: 350px;
+    /* Proper scaling for bigger screens */
   }
+
   .work__container {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
@@ -838,8 +944,9 @@ img {
 @media screen and (min-width: 1200px) {
   .home__img {
     width: 270px;
-    
+
   }
+
   .about__img img {
     width: 350px;
   }
@@ -851,22 +958,29 @@ img {
 
 /* my code  edit start */
 body {
-  background-color: #FFFFFF; /* Set the background color to white */
-  margin: 0; /* Remove default body margin */
-  padding: 0; /* Remove default body padding */
+  background-color: #FFFFFF;
+  /* Set the background color to white */
+  margin: 0;
+  /* Remove default body margin */
+  padding: 0;
+  /* Remove default body padding */
 }
+
 .contact__button {
   font-family: poppins;
 }
+
 .contact__input {
   font-family: 'Inter', sans-serif;
 }
+
 /* Add this CSS to your stylesheet */
 .nav {
   background-color: #FFFFFF;
 }
+
 .l-header {
-  background-color:#FFFFFF ;
+  background-color: #FFFFFF;
 }
 
 
@@ -875,16 +989,20 @@ body {
 
 /* Webkit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-  width: 12px; /* Adjust the width of the scrollbar */
+  width: 12px;
+  /* Adjust the width of the scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--first-color); /* Color of the thumb */
-  border-radius: 10px; /* Border radius to make it curved */
+  background-color: var(--first-color);
+  /* Color of the thumb */
+  border-radius: 10px;
+  /* Border radius to make it curved */
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #fdfaeb; /* Color of the track */
+  background-color: #fdfaeb;
+  /* Color of the track */
 }
 
 /* Firefox scrollbar (optional) */
@@ -908,10 +1026,14 @@ html:hover {
 
 /* Footer */
 .footer {
-  background-color: #333; /* Your background color */
-  padding: 20px; /* Adjust padding as needed */
-  border-radius: 15px 15px 0 0; /* Top-left and top-right corners curved, bottom-left and bottom-right sharp */
-  color: #fff; /* Text color */
+  background-color: #333;
+  /* Your background color */
+  padding: 20px;
+  /* Adjust padding as needed */
+  border-radius: 15px 15px 0 0;
+  /* Top-left and top-right corners curved, bottom-left and bottom-right sharp */
+  color: #fff;
+  /* Text color */
 }
 
 
@@ -931,30 +1053,37 @@ html:hover {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 1rem; /* Add padding for better readability */
-  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 1rem;
+  /* Add padding for better readability */
+  background-color: rgba(0, 0, 0, 0.5);
   transition: background-color 0.6s ease-out, height 0.6s ease-out;
   height: 0;
   overflow: hidden;
-  opacity: 0; /* Initially hidden */
+  opacity: 0;
+  /* Initially hidden */
 
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the title */
+  transform: translate(-50%, -50%);
+  /* Center the title */
   font-size: 1.5rem;
   font-weight: 500;
-  color: rgb(14,126,187);
+  color: rgb(14, 126, 187);
   display: flex;
   justify-content: center;
-  align-items:center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  align-items: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
 /* rgba(255, 255, 255, 0.8) */
 .work__img:hover .overlay {
-  height: 100%; /* Expand the overlay on hover */
-  background-color: rgba(192, 253, 255, 0.8); /* Adjust the opacity as needed */
-  opacity: 1; /* Make the text visible on hover */
+  height: 100%;
+  /* Expand the overlay on hover */
+  background-color: rgba(192, 253, 255, 0.8);
+  /* Adjust the opacity as needed */
+  opacity: 1;
+  /* Make the text visible on hover */
 }
 
 /* footer line */
@@ -962,22 +1091,33 @@ html:hover {
 
 
 .footer {
-  background-color: #333; /* Your background color */
-  padding: 5px; /* Adjust padding as needed */
-  border-radius: 15px 15px 0 0; /* Top-left and top-right corners curved, bottom-left and bottom-right sharp */
-  color: #fff; /* Text color */
-  position: relative; /* Add relative positioning */
+  background-color: #333;
+  /* Your background color */
+  padding: 5px;
+  /* Adjust padding as needed */
+  border-radius: 15px 15px 0 0;
+  /* Top-left and top-right corners curved, bottom-left and bottom-right sharp */
+  color: #fff;
+  /* Text color */
+  position: relative;
+  /* Add relative positioning */
 }
 
 /* Add this CSS for the line */
 .footer::before {
-  content: ''; /* Empty content */
+  content: '';
+  /* Empty content */
   position: absolute;
-  top: 60%; /* Position in the middle */
-  left: 15%; /* Adjust left position to center the line */
-  width: 70%; /* Adjust the width to 70% */
-  height: 1px; /* Line height */
-  background-color: #fff; /* Line color */
+  top: 60%;
+  /* Position in the middle */
+  left: 15%;
+  /* Adjust left position to center the line */
+  width: 70%;
+  /* Adjust the width to 70% */
+  height: 1px;
+  /* Line height */
+  background-color: #fff;
+  /* Line color */
 
 }
 
@@ -985,12 +1125,14 @@ html:hover {
 .footer__icon {
   font-size: 1.5rem;
   color: #fff;
-  margin: 0 5px; /* Adjust margin as needed */
+  margin: 0 5px;
+  /* Adjust margin as needed */
 }
 
 .footer__copy {
   font-size: var(--smaller-font-size);
-  margin-top: 10px; /* Adjust margin-top as needed */
+  margin-top: 10px;
+  /* Adjust margin-top as needed */
 }
 
 
@@ -998,12 +1140,15 @@ html:hover {
 /* Media query for screens with a maximum width of 767px (phone mode) */
 @media screen and (max-width: 767px) {
   .work__container {
-    justify-content: center; /* Center the images */
+    justify-content: center;
+    /* Center the images */
   }
 
   .work__img {
-    width: 100%; /* Make the images take up 100% of the container width */
-    max-width: 300px; /* Set a maximum width for the images */
+    width: 100%;
+    /* Make the images take up 100% of the container width */
+    max-width: 300px;
+    /* Set a maximum width for the images */
   }
 }
 
@@ -1012,16 +1157,20 @@ html:hover {
 @media screen and (min-width: 992px) {
   .contact__container {
     display: flex;
-    justify-content: flex-end; /* Place items at the end of the container */
+    justify-content: flex-end;
+    /* Place items at the end of the container */
   }
 
   .contact__form {
-    width: 360px; /* Adjust the width of the form as needed */
+    width: 360px;
+    /* Adjust the width of the form as needed */
   }
 
   .contact__img {
-    width: 100%; /* Make sure the image takes up the full width of its container */
-    max-width: 400px; /* Set a maximum width for the image */
+    width: 100%;
+    /* Make sure the image takes up the full width of its container */
+    max-width: 400px;
+    /* Set a maximum width for the image */
   }
 }
 
@@ -1034,12 +1183,15 @@ html:hover {
   }
 
   .contact__form {
-    width: 48%; /* Adjust the width as needed */
+    width: 48%;
+    /* Adjust the width as needed */
   }
 
   .contact__img {
-    width: 48%; /* Adjust the width as needed */
-    max-width: 100%; /* Adjust max-width as needed */
+    width: 48%;
+    /* Adjust the width as needed */
+    max-width: 100%;
+    /* Adjust max-width as needed */
   }
 }
 
@@ -1054,30 +1206,42 @@ html:hover {
 
 /* light hover */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--first-color-lighter); /* Change the color to black on hover */
+  background-color: var(--first-color-lighter);
+  /* Change the color to black on hover */
 }
 
 /* line distance spacing */
 .about__subtitle {
-  margin-bottom: 0rem; /* Adjust the margin-bottom value as needed */
+  margin-bottom: 0rem;
+  /* Adjust the margin-bottom value as needed */
 }
 
 .about__text {
-  margin-top: 0rem; /* Adjust the margin-top value as needed */
+  margin-top: 0rem;
+  /* Adjust the margin-top value as needed */
 }
+
 .section-title {
-  margin-top: 0rem; /* Adjust the margin-top value as needed */
+  margin-top: 0rem;
+  /* Adjust the margin-top value as needed */
 }
 
 /* img up down home */
 /* Add this CSS to your stylesheet */
 @keyframes bounceAnimation {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-10px);
   }
+
   60% {
     transform: translateY(-5px);
   }
@@ -1093,24 +1257,29 @@ html:hover {
 
 /* shift button to right*/
 .button--flex {
-  margin-left: 60%; /* Adjust the margin to shift the button to the left */
+  margin-left: 60%;
+  /* Adjust the margin to shift the button to the left */
   max-height: fit-content;
 }
 
 .contact__button {
-  margin-right: 10px; /* Adjust the margin to shift the button to the left */
+  margin-right: 10px;
+  /* Adjust the margin to shift the button to the left */
 }
 
 @media screen and (max-width: 600px) {
   .button__icon {
-    display: none; /* Hide the icon on smaller screens */
+    display: none;
+    /* Hide the icon on smaller screens */
   }
 }
+
 /* my code  edit end */
 .button-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Spacing between buttons */
+  gap: 10px;
+  /* Spacing between buttons */
   justify-content: center;
   align-items: center;
   margin-top: 20px;
@@ -1127,7 +1296,8 @@ html:hover {
   color: white;
   background-color: #007bff;
   transition: background 0.3s ease;
-  white-space: nowrap; /* Prevents text from wrapping */
+  white-space: nowrap;
+  /* Prevents text from wrapping */
 }
 
 /* Hover effect */
@@ -1138,27 +1308,31 @@ html:hover {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .button-container {
-      flex-direction: row; /* Keep buttons horizontal */
-      justify-content: center;
-      gap: 5px; /* Reduce spacing for smaller screens */
+    flex-direction: row;
+    /* Keep buttons horizontal */
+    justify-content: center;
+    gap: 5px;
+    /* Reduce spacing for smaller screens */
   }
 
   .button {
-      font-size: 14px; /* Reduce button size */
-      padding: 10px 15px; /* Adjust padding for compact look */
+    font-size: 14px;
+    /* Reduce button size */
+    padding: 10px 15px;
+    /* Adjust padding for compact look */
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .button {
-      font-size: 15px;
-      padding: 11px 18px;
+    font-size: 15px;
+    padding: 11px 18px;
   }
 }
 
 
 /* --------------------------pratik start here------------------------------ */
-.first-word{
+.first-word {
   color: #007FFF;
 
 }
@@ -1168,13 +1342,14 @@ html:hover {
 
 .skills__container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Default: 5 columns */
+  grid-template-columns: repeat(5, 1fr);
+  /* Default: 5 columns */
   gap: 20px;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 20px;
-  opacity: 0; 
+  opacity: 0;
   animation: fadeIn 0.8s forwards;
 }
 
@@ -1190,7 +1365,7 @@ html:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  opacity: 0; 
+  opacity: 0;
   transform: translateY(20px);
   animation: slideUp 0.6s ease forwards;
 }
@@ -1199,30 +1374,39 @@ html:hover {
 .skill:nth-child(1) {
   animation-delay: 0.2s;
 }
+
 .skill:nth-child(2) {
   animation-delay: 0.4s;
 }
+
 .skill:nth-child(3) {
   animation-delay: 0.6s;
 }
+
 .skill:nth-child(4) {
   animation-delay: 0.8s;
 }
+
 .skill:nth-child(5) {
   animation-delay: 1s;
 }
+
 .skill:nth-child(6) {
   animation-delay: 1.2s;
 }
+
 .skill:nth-child(7) {
   animation-delay: 1.4s;
 }
+
 .skill:nth-child(8) {
   animation-delay: 1.6s;
 }
+
 .skill:nth-child(9) {
   animation-delay: 1.8s;
 }
+
 .skill:nth-child(10) {
   animation-delay: 2s;
 }
@@ -1253,6 +1437,7 @@ html:hover {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -1263,6 +1448,7 @@ html:hover {
     opacity: 0;
     transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -1294,14 +1480,17 @@ html:hover {
 /* project section  */
 .work__container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 columns */
   grid-template-rows: repeat(2, auto);
   gap: 70px;
   padding: 20px;
   justify-content: center;
   place-items: center;
-  max-width: 900px; /* Added to prevent excessive spacing */
-   margin: 0 auto; /*Centering the container */
+  max-width: 900px;
+  /* Added to prevent excessive spacing */
+  margin: 0 auto;
+  /*Centering the container */
 }
 
 .work__item {
@@ -1346,15 +1535,16 @@ html:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
   .work__container {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
-      gap: 60px;
-    }
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns for tablets */
+    gap: 60px;
+  }
 }
 
 @media (max-width: 480px) {
   .work__container {
-      grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
-      gap: 50px;
-    }
+    grid-template-columns: repeat(1, 1fr);
+    /* 1 column for mobile */
+    gap: 50px;
+  }
 }
-

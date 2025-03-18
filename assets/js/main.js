@@ -57,11 +57,6 @@ sr.reveal('.home__social-icon',{ interval: 200});
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 
 
-
-/*===== MY edit start =====*/
-
-
-
 /*==========accordion skills===========*/
 const skillsContent = document.getElementsByClassName('skills__content'),
 skillsHeader = document.querySelectorAll('.skills__header')
