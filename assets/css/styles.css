@@ -1358,7 +1358,6 @@ html:hover {
   background: #007FFF;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -1368,6 +1367,7 @@ html:hover {
   opacity: 0;
   transform: translateY(20px);
   animation: slideUp 0.6s ease forwards;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Animation delay for individual skills */
