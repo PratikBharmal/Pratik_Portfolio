@@ -1422,6 +1422,11 @@ html:hover {
   width: 50px;
   height: 50px;
   margin-bottom: 10px;
+
+  background: #fff;  /* White background */
+  border-radius: 10px;  /* Rounded corners */
+  padding: 10px;       /* Space between logo and white bg */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* Skill text */
@@ -1430,6 +1435,11 @@ html:hover {
   font-weight: bold;
   color: white;
   margin: 0;
+}
+
+.skill:hover img {
+  transform: scale(1.3);
+  border: 3px solid #3498db;  /* Blue border on hover */
 }
 
 /* Animations */
